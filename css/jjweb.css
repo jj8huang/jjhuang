@@ -1,0 +1,177 @@
+img{
+	height:auto;
+	max-width:500px;
+	min-width:50px;
+	width:100%;
+}
+button{
+	cursor:pointer;
+}
+body{
+	margin:0;
+}
+header{
+	padding:0vh 0vh 3vh 0vh;
+}
+footer{
+	padding: 3vh;	
+	text-align:center;
+	background-color:#008ae6;
+}
+#header{
+
+}
+#footer{
+}
+#copyright{
+	font-size: 2vh;
+	/*color:#A8A8A8;*/
+	color:white;
+	padding:4vh 4vh;
+	margin:0;
+}
+#banner_wrap{
+	text-align:center;
+}
+#name_banner{
+	text-align:center;
+	display:inline;
+}
+#software_engineer{
+	text-align:center;
+	display:inline;
+}
+#menu{
+	text-align:center;
+}
+ul#menu_list li{
+	display:inline;
+}
+#menu_list{
+	list-style:none;
+	padding-left:0;
+}
+#about_btn{
+
+}
+#title{
+	padding: 8% 8% 0% 8%;
+}
+.table{
+	display:inline-table;
+	padding: 2%;
+	width: 80%;
+	max-width:100%;
+	height:auto;
+}
+
+.fade_in{
+	display:none;
+}
+
+.btn{
+	background-color:transparent;
+	border-radius:8px;
+	border: none;
+	color:#1aa3ff;
+	font-size: 2vw;
+	padding:1%;
+
+}
+
+@media (max-width:450px) {
+  header{
+  	padding:10vh 0 10vh 0vh;
+  }
+}
+
+@media (max-width:600px) {
+  .btn{
+    font-size:18px; 
+  }
+}
+
+@media (min-width:1400px) {
+  .btn{
+    font-size:30px; 
+  }
+}
+@media(max-width:1211px){
+	#name_banner{
+		text-align:center;
+		display:block;
+	}
+	#software_engineer{
+		text-align:center;
+		display:block;
+	}
+	#banner_wrap{
+		text-align:center;
+	}
+}
+
+
+.footer-basic-centered{
+	background-color: #292c2f;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: center;
+	font: normal 18px sans-serif;
+
+	padding: 45px;
+	margin-top: 80px;
+}
+
+.footer-basic-centered .footer-company-motto{
+	color:  #8d9093;
+	font-size: 24px;
+	margin: 0;
+}
+
+.footer-basic-centered .footer-company-name{
+	color:  #8f9296;
+	font-size: 14px;
+	margin: 0;
+}
+
+.footer-basic-centered .footer-links{
+	list-style: none;
+	font-weight: bold;
+	color:  #ffffff;
+	padding: 35px 0 23px;
+	margin: 0;
+}
+
+.footer-basic-centered .footer-links a{
+	display:inline-block;
+	text-decoration: none;
+	color: inherit;
+}
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 600px) {
+
+	.footer-basic-centered{
+		padding: 35px;
+	}
+
+	.footer-basic-centered .footer-company-motto{
+		font-size: 18px;
+	}
+
+	.footer-basic-centered .footer-company-name{
+		font-size: 12px;
+	}
+
+	.footer-basic-centered .footer-links{
+		font-size: 14px;
+		padding: 25px 0 20px;
+	}
+
+	.footer-basic-centered .footer-links a{
+		line-height: 1.8;
+	}
+}
+
