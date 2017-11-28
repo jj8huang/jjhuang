@@ -16,7 +16,7 @@ header{
 footer{
 	padding: 3vh;	
 	text-align:center;
-	background-color:#008ae6;
+	background-color:#ffbd80 !important;
 }
 #header{
 
@@ -57,6 +57,11 @@ ul#menu_list li{
 #title{
 	padding: 8% 8% 0% 8%;
 }
+
+.footer-company-name{
+	color:#ff881a !important;
+	font-family:"Century Gothic";
+}
 .table{
 	display:inline-table;
 	padding: 2%;
@@ -76,7 +81,7 @@ ul#menu_list li{
 	color:#1aa3ff;
 	font-size: 2vw;
 	padding:1%;
-
+	font-family: "Century Gothic" ;
 }
 
 @media (max-width:450px) {
