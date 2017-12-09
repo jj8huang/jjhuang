@@ -1,3 +1,8 @@
+html{
+	height:100%;
+	width:100%;
+}
+
 img{
 	height:auto;
 	max-width:500px;
@@ -6,23 +11,30 @@ img{
 }
 button{
 	cursor:pointer;
+	outline:none !important;
+}
+button:hover{
+	color:#F8E9A1 !important;
 }
 body{
 	margin:0;
+	background-color:#A8D0E6;
+	height:100%;
+	width:100%;
 }
 header{
-	padding:0vh 0vh 3vh 0vh;
+	padding:0vh 0vh 0vh 0vh;
 }
 footer{
 	padding: 3vh;	
 	text-align:center;
-	background-color:#ffbd80 !important;
+	background-color:#374785 !important;
+	/*background-color:#ffbd80 !important;*/
 }
 #header{
+	width:100% !important;
+}
 
-}
-#footer{
-}
 #copyright{
 	font-size: 2vh;
 	/*color:#A8A8A8;*/
@@ -36,10 +48,12 @@ footer{
 #name_banner{
 	text-align:center;
 	display:inline;
+	padding:0 0.5% 0 0;
 }
 #software_engineer{
 	text-align:center;
 	display:inline;
+	padding:0 0 0 0.5%;
 }
 #menu{
 	text-align:center;
@@ -58,10 +72,55 @@ ul#menu_list li{
 	padding: 8% 8% 0% 8%;
 }
 
+.main{
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+
+.mainDiv{
+
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    text-align: center;
+}
+
+.project{
+	display:none;
+	text-align:center;
+}
+
+.project_list_header{	
+	color:#374785 !important;
+	font-family:"Garamond";
+	font-size: 12vh !important;
+}
+
+.about{
+	display:none;
+}
+
+.about_section{
+	text-align:center;
+}
+
+.project_section{
+	text-align:center;
+}
+
 .footer-company-name{
 	color:#ff881a !important;
+	color:#25304E!important;
 	font-family:"Century Gothic";
 }
+
+.footer-links{
+	color:#F8E9A1 !important;
+	font-family:"Century Gothic";
+}
+
 .table{
 	display:inline-table;
 	padding: 2%;
@@ -74,14 +133,32 @@ ul#menu_list li{
 	display:none;
 }
 
+.content_link{
+	color:#ffffff;
+}
+
+.content_link:hover{	
+	color:#f8e9a1 !important;
+	text-decoration:none !important;
+}
+
 .btn{
 	background-color:transparent;
 	border-radius:8px;
 	border: none;
-	color:#1aa3ff;
-	font-size: 2vw;
+	font-size: 3vw;
 	padding:1%;
 	font-family: "Century Gothic" ;
+}
+
+.closing
+{
+	text-align:center;
+	font-family:"Century Gothic";
+	font-size: 1vh;
+	/*color:#24305e;*/
+	color:#ffffff;
+	padding:3vh 0 2vh 0;
 }
 
 @media (max-width:450px) {
@@ -92,7 +169,7 @@ ul#menu_list li{
 
 @media (max-width:600px) {
   .btn{
-    font-size:18px; 
+    font-size:24px; 
   }
 }
 
