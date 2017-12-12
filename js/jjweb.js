@@ -6,9 +6,10 @@ $(document).ready(function() {
 	$('.footer-basic-centered').fadeIn(800);
 
 	$('#project_btn').click(function(){
-		if(projectVisible){
-	    	$('.project').toggle('drop');	    	
-	    	$('.project_details').toggle('drop');
+		if(projectVisible){	    	
+	    	$('html, body').animate({
+        		scrollTop: $('.project_details').offset().top},
+        		500);
 		} else {
 	    	$('.project_details').css('display', 'flex').delay(10);
 	    	$('.project').css('display', 'inline').delay(10);
@@ -19,14 +20,15 @@ $(document).ready(function() {
 	    	$('html, body').animate({
         		scrollTop: $('.project_details').offset().top},
         		500);
+			projectVisible = true;
 		}
-		projectVisible = !projectVisible
 	});
 
 	$('#about_btn').click(function(){
-		if(aboutVisible){
-	    	$('.about').toggle('drop');	    	
-	    	$('.about_details').toggle('drop');
+		if(aboutVisible){	    	
+	    	$('html, body').animate({
+        		scrollTop: $('.about_details').offset().top},
+        		500);
 		} else {
 	    	$('.about_details').css('display', 'flex').delay(10);
 	    	$('.about').css('display', 'inline').delay(10);
@@ -37,7 +39,23 @@ $(document).ready(function() {
 	    	$('html, body').animate({
         		scrollTop: $('.about_details').offset().top},
         		500);
+			aboutVisible = true;
 		}
-		aboutVisible = !aboutVisible
+	});
+
+	$('.home_btn').click(function(){		
+	    $('html, body').animate({
+        	scrollTop: $('.mainDiv').offset().top},
+        	500);
+	    if(aboutVisible){
+	    	$('.about').toggle('drop');	    	
+	    	$('.about_details').toggle('drop');
+			aboutVisible = false;
+		}
+	    if(projectVisible){
+	    	$('.project').toggle('drop');	    	
+	    	$('.project_details').toggle('drop');
+	    	projectVisible = false;
+		} 
 	});
 });

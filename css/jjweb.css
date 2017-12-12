@@ -185,11 +185,18 @@ ul#menu_list li{
 	text-align:left;
 	font-family:"Century Gothic";
 	/*background-color:#ffffff;*/
-	height: 70%;
+	height: 80%;
 	width:60%;
 	margin:0 auto;
 	border-color:green;
 	align-items:center;
+}
+
+.home_btn{
+	position:absolute;
+     margin-top: 1%;
+     margin-right: 1%;
+     right:0;
 }
 
 .blurb_text{
