@@ -79,7 +79,7 @@ ul#menu_list li{
 }
 .project_details{
 	display:none;
-	height:100%;
+	min-height:100%;
 	width:100%;
 	background-color:#f76c6c;
 }
@@ -128,16 +128,15 @@ ul#menu_list li{
 .about_section{
 	text-align:center;
 	width:100%;
-
     align-items: center;
     display: flex;
     vertical-align:bottom;
 }
-}
 
 .project_section{
 	text-align:center;
-	width:100%;
+	min-width:100%;
+	min-height:100%;
 }
 
 .footer-company-name{
@@ -213,6 +212,33 @@ ul#menu_list li{
 	font-size:16px;
 	color:#ffffff;
 	padding:3vh 0 2vh 0;
+}
+
+.btn-info:focus{
+	background: none !important;
+}
+.btn-info:hover{
+	background: none !important;
+}
+.btn-info{
+	background: none !important;
+	-o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition:.5s;
+}
+
+.btn-info:hover{
+	background-color:#f8e9a1 !important;
+}
+
+.modal-blurb{
+	text-align:left;
+}
+
+.modal-open{
+	padding-right: 0 !important
 }
 
 @media (max-width:450px) {
